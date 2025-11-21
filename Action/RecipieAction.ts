@@ -19,3 +19,7 @@ export const allRecipiesAction = async () => {
     // console.log(allrecipies)
     return allrecipies
 }
+
+export const singleRecipieAction = async (id:RecipieInsert) => {
+    console.log(id)
+}
