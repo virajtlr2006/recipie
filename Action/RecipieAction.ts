@@ -2,11 +2,12 @@
 
 import { RecipieInsert, RecipieTable } from "@/db/Schema"
 import { db } from ".."
+import { eq } from "drizzle-orm"
 
 // New Recipie
-export const NewRecipieAction = async (data:RecipieInsert) => {
+export const NewRecipieAction = async (data: RecipieInsert) => {
     // console.log(data);
-    
+
     const newrecipie = await db.insert(RecipieTable).values(data)
 
     return true
@@ -20,6 +21,11 @@ export const allRecipiesAction = async () => {
     return allrecipies
 }
 
-export const singleRecipieAction = async (id:RecipieInsert) => {
-    console.log(id)
+// Single Recipie
+export const singleRecipieAction = async (id: string) => {
+    // console.log(id)
+    const single = await db.select().from(RecipieTable).where(eq(RecipieTable.id, id))
+    // console.log(single);
+    return single
+
 }

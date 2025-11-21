@@ -12,3 +12,4 @@ export const RecipieTable = pgTable("recipie", {
 });
 
 export type RecipieInsert = typeof RecipieTable.$inferInsert
+export type RecipieSingle = typeof RecipieTable.$inferSelect
