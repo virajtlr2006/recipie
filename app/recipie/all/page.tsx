@@ -1,11 +1,12 @@
 'use client'
 
 import { allRecipiesAction } from '@/Action/RecipieAction'
+import { RecipieInsert } from '@/db/Schema'
 import React, { useEffect, useState } from 'react'
 
 const page = () => {
 
-    const [allRecipies, setallRecipies] = useState(null)
+    const [allRecipies, setallRecipies] = useState<RecipieInsert | null >(null)
 
     useEffect(() => {
         all()
@@ -13,14 +14,14 @@ const page = () => {
 
     const all = async () => {
         const a = await allRecipiesAction()
-        console.log(a)
+        setallRecipies(a || [])
     }
 
 
     return (
         <div>
             All recipies here
-            {}
+            
         </div>
     )
 }
