@@ -27,5 +27,12 @@ export const singleRecipieAction = async (id: string) => {
     const single = await db.select().from(RecipieTable).where(eq(RecipieTable.id, id))
     // console.log(single);
     return single
+}
 
+// User all Recipies
+export const userallRecipiesAction = async (email:string) => {
+    // console.log(email ||"")
+    const userallrecipie = await db.select().from(RecipieTable).where(eq(RecipieTable.email,email))
+    // console.log(userallrecipie)
+    return userallrecipie
 }

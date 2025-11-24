@@ -31,6 +31,7 @@ const Page = () => {
             {singlerecipie && singlerecipie.map((s: RecipieInsert) =>
                 <div>
                     <img src={s.image || ""} />
+                    <p>By : {s.email}</p>
                     <p>{s.name}</p>
                     <p>{s.ingrediants}</p>
                     <p>{s.nutritions}</p>
