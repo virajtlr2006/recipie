@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
 
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-2 group cursor-pointer">
+        <Link href="/recipie/all" className="flex items-center gap-2 group cursor-pointer">
           <div
             className="
               p-1.5 rounded-lg bg-white/20 shadow-md
@@ -40,7 +40,7 @@ export default function Navbar() {
 
             <NavigationMenuItem>
               <Link
-                href="/"
+                href="/recipie/all"
                 className={navigationMenuTriggerStyle({
                   className:
                     "text-white hover:text-[#FFE8D6] font-medium bg-transparent text-base",
@@ -64,7 +64,7 @@ export default function Navbar() {
 
             <NavigationMenuItem>
               <Link
-                href="/"
+                href="/recipie/all"
                 className={navigationMenuTriggerStyle({
                   className:
                     "text-white hover:text-[#FFE8D6] font-medium flex gap-1 items-center bg-transparent text-base",

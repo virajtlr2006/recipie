@@ -47,8 +47,8 @@ const Page = () => {
           {/* Stats */}
           <div className="flex gap-8 mt-4 text-[#3D405B] font-semibold">
             <div className="flex items-center gap-1"><ClipboardIcon className="w-5 h-5 text-[#E07A5F]" /> <span className="text-[#E07A5F]">{userRecipies?.length || 0}</span> Recipes</div>
-            <div className="flex items-center gap-1"><UsersIcon className="w-5 h-5 text-[#E07A5F]" /> <span className="text-[#E07A5F]">{0}</span> Followers</div>
-            <div className="flex items-center gap-1"><UserIcon className="w-5 h-5 text-[#E07A5F]" /> <span className="text-[#E07A5F]">{0}</span> Following</div>
+            <div className="flex items-center gap-1"><UsersIcon className="w-5 h-5 text-[#E07A5F]" /> <span className="text-[#E07A5F]">{172}</span> Followers</div>
+            <div className="flex items-center gap-1"><UserIcon className="w-5 h-5 text-[#E07A5F]" /> <span className="text-[#E07A5F]">{18}</span> Following</div>
           </div>
         </div>
       </div>
